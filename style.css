@@ -1,11 +1,28 @@
 /* CSS files add styling rules to your content */
 
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+#bands {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+#bands td, #bands th {
+  border: 1px solid #800080;
+  padding: 8px;
+  text-align: center;
+  border-style:hidden;
+}
+
+#bands tr:nth-child(even){background-color: #ff33cc;}
+
+#bands tr:nth-child(odd){background-color: #e495e4;}
+
+#bands tr:hover {background-color: #ddd;}
+
+#bands th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
 }
