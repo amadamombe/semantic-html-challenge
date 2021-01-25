@@ -13,7 +13,7 @@
   <body>
    
     <table id="bands">
-      <caption>List of bands</caption>
+      <caption></caption>
       <tr>
         <th id="1">BAND</th>
         <th id="2">YEAR FORMED</th>
@@ -75,15 +75,32 @@
         <td>No More Heroes</td>
       </tr>
       <tr>
+        <tfoot>
         <td></td>
         <td>TOTAL ALBUMS</td>
         <td></td>
         <td></td>
-       </tr>
-      
+      </tfoot>
       </tr>
       <tr>
     </table>  
 
+    <span id="val"></span>
+
+    <script>
+            
+      var table = document.getElementById("bands"), sumVal = 0;
+      
+      for(var i = 1; i < table.rows.length; i++)
+      {
+          sumVal = sumVal + parseInt(table.rows[i].cells[2].innerHTML);
+      }
+      
+      document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
+      console.log(sumVal);
+      
+  </script>
+
+    <p>A SUMMARY OF THE UK'S MOST FAMOUS PUNK BANDS</p>
   </body>
 </html>

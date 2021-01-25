@@ -1,28 +1,56 @@
 /* CSS files add styling rules to your content */
 
+
+body {
+  background-image: url(https://cdn.glitch.com/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fnoise.png);
+}
+
+p {
+  text-align: right;
+  font: bold rock salt;
+}
+
 #bands {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#bands td, #bands th {
-  border: 1px solid #800080;
-  padding: 8px;
-  text-align: center;
-  border-style:hidden;
-}
-
 #bands tr:nth-child(even){background-color: #ff33cc;}
 
-#bands tr:nth-child(odd){background-color: #e495e4;}
+#bands tr:nth-child(2n+1){background-color: #e495e4;}
+
+#bands tr:nth-child(-n+1){
+  background-image: url(https://cdn.glitch.com/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fleopardskin.jpg?1527763317245);
+}
+
+#bands tf:nth-child(10n + 1) {
+  background-image: url(https://cdn.glitch.com/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fleopardskin.jpg?1527763317245);
+}
 
 #bands tr:hover {background-color: #ddd;}
 
 #bands th {
+  border: 2px solid #800080;
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
-  background-color: #4CAF50;
+  text-align: center;
   color: white;
+  background: linear-gradient rgba(0,0,0,0.1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#bands tfoot{
+  border: 2px solid #800080;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient rgba(0,0,0,0.5);
+}
+
+#bands td {
+  padding: 8px;
+  text-align: center;
 }
